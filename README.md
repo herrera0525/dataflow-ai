@@ -69,6 +69,69 @@ This application implements:
 - Input validation and sanitization
 - Development-only console logging
 
+## Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Fork this repository to your GitHub account
+
+2. Go to [vercel.com](https://vercel.com) and sign up with GitHub
+
+3. Click "New Project" and import the `dataflow-ai` repository
+
+4. Vercel will automatically detect the Vite configuration
+
+5. Click "Deploy" and wait for the build to complete
+
+6. Your app will be live at `https://your-app-name.vercel.app`
+
+### Deploy to Netlify
+
+1. Fork this repository to your GitHub account
+
+2. Go to [netlify.com](https://netlify.com) and sign up with GitHub
+
+3. Click "Add new site" > "Import an existing project"
+
+4. Select the `dataflow-ai` repository
+
+5. Set build command: `npm run build`
+
+6. Set publish directory: `dist`
+
+7. Add environment variables:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+
+8. Click "Deploy site"
+
+### Deploy to GitHub Pages
+
+1. Add homepage to `package.json`:
+   ```json
+   "homepage": "https://yourusername.github.io/dataflow-ai"
+   ```
+
+2. Install gh-pages:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+3. Add deploy scripts to `package.json`:
+   ```json
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d dist"
+   ```
+
+4. Deploy:
+   ```bash
+   npm run deploy
+   ```
+
+## Live Demo
+
+Check out the live demo at: [https://dataflow-ai-demo.vercel.app](https://dataflow-ai-demo.vercel.app)
+
 ## License
 
 MIT
