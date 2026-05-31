@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "env": {
+    "VITE_SUPABASE_URL": "https://dfrckjrqngxkixajpiga.supabase.co",
+    "VITE_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRmcmNranJxbmd4a2l4YWpwaWdhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk5Mzc2OTIsImV4cCI6MjA5NTUxMzY5Mn0.wDeb6N8Opo4KtUSqqTUVLlCFw6-rZs8Ehl5b9W42bvQ"
+  }
+}
